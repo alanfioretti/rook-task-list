@@ -150,10 +150,10 @@ export default function App() {
         rook-task-list.exe — personality mode:{" "}
         <span className="accent">{personalities[personality].name}</span>
       </div>
+          <div className="line"> {message}</div>
 
       <div className="scroll-area" ref={scrollRef}>
         <div className="screen">
-          <div className="line"> {message}</div>
 
           {showCompleted && (
             <div className="completed-section">
