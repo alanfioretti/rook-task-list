@@ -150,7 +150,7 @@ export default function App() {
         rook-task-list.exe — personality mode:{" "}
         <span className="accent">{personalities[personality].name}</span>
       </div>
-          <div className="line"> {message}</div>
+      <div className="line"> {message}</div>
 
       <div className="scroll-area" ref={scrollRef}>
         <div className="screen">
@@ -187,6 +187,7 @@ export default function App() {
             <span>&gt;</span>{" "}
             <input
               value={input}
+              placeholder="Type a task and press Enter…"
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={(e) => e.key === "Enter" && handleAdd()}
               className="term-input"
